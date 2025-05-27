@@ -1,0 +1,61 @@
+package w13;
+
+public class DoubleLinkedListsMain06 {
+    public static void main(String[] args) throws Exception{
+        DoubleLinkedLists06 dll=new DoubleLinkedLists06();
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println("================================");
+        dll.addFirst(3);
+        dll.addLast(4);
+        dll.addFirst(7);
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println("================================");
+        dll.add(40, 1);
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println("================================");
+        dll.clear();
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println();
+        dll.addLast(50);
+        dll.addLast(40);
+        dll.addLast(10);
+        dll.addLast(20);
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println("================================");
+        dll.removeFirst();
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println("================================");
+        dll.removeLast();
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println("================================");
+        dll.remove(1);
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println("================================");
+        dll.clear();
+        System.out.println();
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println("================================");
+        dll.addFirst(3);
+        dll.addLast(4);
+        dll.addFirst(7);
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println("================================");
+        dll.add(40, 1);
+        dll.print();
+        System.out.println("size: "+dll.size());
+        System.out.println("================================");
+        System.out.println("data awal pada linked lists adalah: "+dll.getFirst());
+        System.out.println("data akhir pada linked lists adalah: "+dll.getLast());
+        System.out.println("data indeks ke-1 linked lists adalah: "+dll.get(1));
+    }
+}

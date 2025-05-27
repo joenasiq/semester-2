@@ -1,3 +1,5 @@
+package w1;
+
 public class fungsi06 {
     public static void main(String[] args) {
         int[][] stok = {
