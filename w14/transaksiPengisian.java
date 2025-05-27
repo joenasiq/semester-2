@@ -12,7 +12,6 @@ public class transaksiPengisian {
         this.liter=liter;
         this.totalBayar=totalBayar* liter;
     }
-
     void tampilkanTransaksi(){
         System.out.println(kendaraan.platNomor+": Rp "+ totalBayar);
     }

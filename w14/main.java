@@ -2,30 +2,30 @@ package w14;
 import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        linkedList antrian = new linkedList();
-        queue transaksi = new queue(100);
+        Scanner sc=new Scanner(System.in);
+        linkedListAntrian antrian=new linkedListAntrian();
+        queueTransaksi transaksi=new queueTransaksi(100);
 
         int pilih;
         do {
             System.out.println("\n--- Menu SPBU ---");
-            System.out.println("1. Tambah Antrian Kendaraan");
-            System.out.println("2. Tampilkan Antrian");
-            System.out.println("3. Cek Jumlah Antrian Kendaraan");
-            System.out.println("4. Layani Kendaraan");
-            System.out.println("5. Tampilkan Riwayat Transaksi");
-            System.out.println("0. Keluar");
-            System.out.print("Pilih: ");
+            System.out.println("1. tambah antrian kendaraan");
+            System.out.println("2. tampilkan antrian");
+            System.out.println("3. cek Jumlah antrian kendaraan");
+            System.out.println("4. layani kendaraan");
+            System.out.println("5. tampilkan riwayat transaksi");
+            System.out.println("0. keluar");
+            System.out.print("pilih: ");
             pilih = sc.nextInt();
             sc.nextLine();
 
             switch (pilih) {
                 case 1:
-                    System.out.print("Masukkan Plat Nomor: ");
+                    System.out.print("masukkan plat nomor: ");
                     String plat = sc.nextLine();
-                    System.out.print("Masukkan Jenis Kendaraan: ");
+                    System.out.print("masukkan jenis kendaraan: ");
                     String tipe = sc.nextLine();
-                    System.out.print("Masukkan Merk: ");
+                    System.out.print("masukkan merk: ");
                     String merk = sc.nextLine();
                     Kendaraan kd=new Kendaraan(plat,tipe,merk);
                     antrian.tambahAntrian(kd);
@@ -42,11 +42,11 @@ public class main {
                         System.out.println("tidak ada kendaraan dalam antrian");
                     }else{
                         System.out.println("petugas melayani "+dilayani.platNomor);
-                        System.out.print("masukkan Jenis BBM: ");
+                        System.out.print("masukkan jenis BBM: ");
                         String jenisBBM=sc.nextLine();
-                        System.out.print("masukkan Harga per liter: ");
+                        System.out.print("masukkan harga per liter: ");
                         double harga=sc.nextDouble();
-                        System.out.print("masukkan Jumlah liter: ");
+                        System.out.print("masukkan jumlah liter: ");
                         double liter=sc.nextDouble();
                         sc.nextLine();
                         BBM bbm=new BBM(jenisBBM,harga);

@@ -1,12 +1,11 @@
 package w14;
 
-public class linkedList {
+public class linkedListAntrian {
     node head,tail;
 
     public boolean isEmpty(){
         return head==null;
     }
-
     public void tambahAntrian(Kendaraan k){
         node baru=new node(k);
         if(isEmpty()){
@@ -17,7 +16,6 @@ public class linkedList {
         }
         System.out.println(">> Kendaraan masuk ke dalam antrian");
     }
-
     public void tampilkanAntrian(){
         if(isEmpty()){
             System.out.println("Tidak ada kendaraan dalam antrian");
@@ -31,7 +29,6 @@ public class linkedList {
             temp=temp.next;
         }
     }
-
     public int hitungAntrian(){
         int jumlah=0;
         node temp=head;
@@ -41,7 +38,6 @@ public class linkedList {
         }
         return jumlah;
     }
-
     public Kendaraan layaniKendaraan(){
         if(isEmpty()){
             return null;
